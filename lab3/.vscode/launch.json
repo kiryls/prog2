@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ContattoDemo<lab3_902de5dd>",
+            "request": "launch",
+            "mainClass": "ContattoDemo",
+            "projectName": "lab3_902de5dd"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DieHard<lab3_902de5dd>",
+            "request": "launch",
+            "mainClass": "DieHard",
+            "projectName": "lab3_902de5dd"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FrazioneDemo<lab3_902de5dd>",
+            "request": "launch",
+            "mainClass": "FrazioneDemo",
+            "projectName": "lab3_902de5dd"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RubricaDemo<lab3_902de5dd>",
+            "request": "launch",
+            "mainClass": "RubricaDemo",
+            "projectName": "lab3_902de5dd",
+            "vmArgs": "-ea"
+        }
+    ]
+}
