@@ -70,9 +70,8 @@ public class Set<T> {
         return true;
     }
 
-    public boolean equalsTo(Set<T> s) {
-        if(this.size != s.size) return false;
-        return s.subsetOf(this) && this.subsetOf(s);
+    public boolean equalsTo(Set<T> s) {        
+        return this.size == s.size && this.subsetOf(s);
     }
 
     public Set<T> union(Set<T> s) {
