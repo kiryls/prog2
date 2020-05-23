@@ -29,6 +29,6 @@ public class MyList {
             return;
 
         n.setElem(n.getElem() + sum);
-        modifica(n.getNext(), n.getElem() + sum);
+        modifica(n.getNext(), n.getElem());
     }
 }
