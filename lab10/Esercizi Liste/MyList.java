@@ -31,4 +31,15 @@ public class MyList {
         n.setElem(n.getElem() + sum);
         modifica(n.getNext(), n.getElem());
     }
+
+    public void pushSomma() {
+        this.first = new Node(pushSomma(this.first), this.first);
+    }
+
+    public int pushSomma(Node n) {
+        if (n != null)
+            return 0;
+
+        return n.getElem() > 0 ? n.getElem() + pushSomma(n.getNext()) : pushSomma(n.getNext());
+    }
 }
