@@ -1,7 +1,7 @@
 
 public class Cons extends List {
     private int elem;
-    private List next; 
+    private List next;
 
     protected Cons(int elem, List next) {
         this.elem = elem;
@@ -22,19 +22,19 @@ public class Cons extends List {
 
     public List insert(int x) {
         if (x < elem)
-            return new Cons(x, this); 
-        else if (x == elem) 
+            return new Cons(x, this);
+        else if (x == elem)
             return this;
-        else 
+        else
             return new Cons(elem, next.insert(x));
     }
 
     public List append(List l) {
         if (l.empty())
             return this;
-        else { 
-            int x = ((Cons) l).elem; 
-            List m = ((Cons) l).next; 
+        else {
+            int x = ((Cons) l).elem;
+            List m = ((Cons) l).next;
             return this.insert(x).append(m);
         }
     }
@@ -59,8 +59,8 @@ public class Cons extends List {
             return this.elem;
 
         return this.next.get(i - 1);
-    }  
-    
+    }
+
     public List succ() {
         return new Cons(this.elem + 1, this.next.succ());
     }
@@ -69,8 +69,7 @@ public class Cons extends List {
         if (this.elem <= x)
             return new Cons(this.elem, this.next.filter_le(x));
 
-        return this.next.filter_le(x);
-
+        return new Nil();
     }
 
     public List filter_gt(int x) {
@@ -91,9 +90,8 @@ public class Cons extends List {
 
     }
 
-
     public List intersect(List l) {
-        if(l.contains(this.elem))
+        if (l.contains(this.elem))
             return new Cons(this.elem, l.intersect(this.next));
 
         return l.intersect(this.next);
