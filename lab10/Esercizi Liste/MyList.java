@@ -14,8 +14,21 @@ public class MyList {
         String res = "";
         for (Node p = first; p != null; p = p.getNext()) {
             res += p.getElem();
-            if (p.getNext() != null) res += ", ";
+            if (p.getNext() != null)
+                res += ", ";
         }
         return res;
+    }
+
+    public void modifica() {
+        modifica(first, 0);
+    }
+
+    private void modifica(Node n, int sum) {
+        if (n == null)
+            return;
+
+        n.setElem(n.getElem() + sum);
+        modifica(n.getNext(), n.getElem() + sum);
     }
 }
