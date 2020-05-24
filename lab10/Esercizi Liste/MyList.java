@@ -37,7 +37,7 @@ public class MyList {
     }
 
     public int pushSomma(Node n) {
-        if (n != null)
+        if (n == null)
             return 0;
 
         return n.getElem() > 0 ? n.getElem() + pushSomma(n.getNext()) : pushSomma(n.getNext());
