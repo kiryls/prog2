@@ -32,14 +32,25 @@ public class MyList {
         modifica(n.getNext(), n.getElem());
     }
 
+    
     public void pushSomma() {
-        this.first = new Node(pushSomma(this.first), this.first);
+        int sumOfPos = 0;
+
+        for(Node n = this.first; n != null; n = n.getNext())
+            if(n.getElem() > 0) 
+                sumOfPos += n.getElem();
+
+        this.first = new Node(sumOfPos, this.first);
     }
 
-    public int pushSomma(Node n) {
+    public void pushSommaR() {
+        first = new Node(pushSommaR(first), first);
+    }
+
+    public int pushSommaR(Node n) {
         if (n == null)
             return 0;
 
-        return n.getElem() > 0 ? n.getElem() + pushSomma(n.getNext()) : pushSomma(n.getNext());
+        return n.getElem() > 0 ? n.getElem() + pushSommaR(n.getNext()) : pushSommaR(n.getNext());
     }
 }
