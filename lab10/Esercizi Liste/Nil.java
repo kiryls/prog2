@@ -10,4 +10,8 @@ public class Nil extends List {
     public String toString() {
         return "";
     }
+
+    public ListIterator iterator() {
+        return new ListIterator(null);
+    }
 }
