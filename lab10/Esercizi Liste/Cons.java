@@ -29,8 +29,11 @@ public class Cons extends List {
             return new Cons(n, this);
 
         try {
-            // new Cons(n, this.insert(n, x))
-            return this.next.insert(n, x - 1);
+            
+
+            
+
+
 
         } catch (IllegalArgumentException e) {
             System.err.println("Error: " + e);
