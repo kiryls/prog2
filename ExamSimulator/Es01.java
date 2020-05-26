@@ -1,0 +1,11 @@
+public class Es01 {
+    public static <T> boolean inComune(Node<T> p, Node<T> q) {
+        if(p == null || q == null) 
+            return false;
+
+        if(p.getElem().equals(q.getElem()))
+            return true;
+
+        return inComune(p.getNext(), q.getNext());
+    }
+}
