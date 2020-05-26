@@ -31,7 +31,7 @@ public class Cons extends List {
         try {
             
 
-            
+            return null;
 
 
 
