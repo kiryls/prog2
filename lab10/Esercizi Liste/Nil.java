@@ -7,7 +7,6 @@ public class Nil extends List {
         return new Cons(n, this);
     }
 
-    public List getNext() { return this; }
     public boolean empty() { return true; }
 
     public String toString() {
