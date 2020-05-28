@@ -9,21 +9,11 @@ public class Cons extends List {
         this.next = next;
     }
 
-    public int getElem() {
-        return elem;
-    }
+    public int getElem() { return elem; }
+    public void setElem(int elem) { this.elem = elem; }
 
-    public void setElem(int elem) {
-        this.elem = elem;
-    }
-
-    public List getNext() {
-        return next;
-    }
-
-    public void setNext(List next) {
-        this.next = next;
-    }
+    public List getNext() { return next; }
+    public void setNext(List next) { this.next = next; }
 
     public String toString() {
         return elem + ", " + next.toString();
