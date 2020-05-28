@@ -2,10 +2,13 @@
 public class Nil extends List {
     public List insert(int n, int x) throws IllegalArgumentException {
         if (x != 0)
-            throw new IllegalArgumentException("Value exceeds the list boundary");
+            throw new IllegalArgumentException("Failing insert [" + n + "] @ [" + x + "]");
 
         return new Cons(n, this);
     }
+
+    public List getNext() { return this; }
+    public boolean empty() { return true; }
 
     public String toString() {
         return "";
