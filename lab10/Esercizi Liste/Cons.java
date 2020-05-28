@@ -13,8 +13,16 @@ public class Cons extends List {
         return elem;
     }
 
+    public void setElem(int elem) {
+        this.elem = elem;
+    }
+
     public List getNext() {
         return next;
+    }
+
+    public void setNext(List next) {
+        this.next = next;
     }
 
     public String toString() {
@@ -29,11 +37,8 @@ public class Cons extends List {
             return new Cons(n, this);
 
         try {
-            
-
-            return null;
-
-
+        
+            return this.setNext(this.next.insert(n, x-1));
 
         } catch (IllegalArgumentException e) {
             System.err.println("Error: " + e);
