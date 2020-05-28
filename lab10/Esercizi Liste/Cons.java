@@ -15,20 +15,23 @@ public class Cons extends List {
     public List getNext() { return next; }
     public void setNext(List next) { this.next = next; }
 
+    public boolean empty() { return false; }
+
     public String toString() {
         return elem + ", " + next.toString();
     }
 
     public List insert(int n, int x) throws IllegalArgumentException {
         if (x < 0)
-            throw new IllegalArgumentException("Negative index");
+            throw new IllegalArgumentException("Failing insert [" + n + "] @ [" + x + "]");
 
         if (x == 0)
             return new Cons(n, this);
 
         try {
-        
-            return this.setNext(this.next.insert(n, x-1));
+
+            this.setNext(this.next.insert(n, x - 1));
+            return this;
 
         } catch (IllegalArgumentException e) {
             System.err.println("Error: " + e);
