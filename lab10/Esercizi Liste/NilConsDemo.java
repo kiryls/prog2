@@ -5,6 +5,7 @@ public class NilConsDemo {
         Title.show("iteratore su lista vuota");
         for (Integer i : l)
             System.out.println(i);
+        System.out.println("(se non stampa nulla e' perche' la lista e' vuota)");
 
         Title.show("inserimenti non ammessi");
         try {
@@ -19,14 +20,18 @@ public class NilConsDemo {
             System.err.println(e);
         }
 
-        Title.show("aggiungo elementi alla lista");
+        Title.show("insert e stampa col for-each");
         l = l.insert(4, 0);
         l = l.insert(1, 0);
         l = l.insert(3, 1);
 
-        Title.show("list so far");
-        for(Integer i : l)
-            System.out.println(i);   
+        String output = "[";
+
+        for (Integer i : l)
+            output += " " + i + " ";
+        output += "]";
+
+        System.out.println(output);
        
     }
 }
