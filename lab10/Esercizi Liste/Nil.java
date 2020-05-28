@@ -15,6 +15,6 @@ public class Nil extends List {
     }
 
     public ListIterator iterator() {
-        return new ListIterator(null);
+        return new ListIterator(this);
     }
 }
