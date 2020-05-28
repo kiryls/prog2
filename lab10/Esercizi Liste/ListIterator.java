@@ -1,19 +1,19 @@
 import java.util.Iterator;
 
 public class ListIterator implements Iterator<Integer> {
-    private Cons next;
+    private List next;
 
     public ListIterator (List next) {
-        this.next = (Cons)next;
+        this.next = next;
     } 
 
     public boolean hasNext() {
-        return next != null;
+        return !next.empty();
     }
 
     public Integer next() {
-        int x = next.getElem();
-        next = (Cons)next.getNext();
+        int x = ((Cons) next).getElem();
+        next = ((Cons) next).getNext();
         return x;
     }
 }
