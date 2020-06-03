@@ -84,9 +84,24 @@ class List<T> {
 
 
     public void delete(T x) {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        if(this.first == null) 
+            return;
+
+        Node<T> prev = this.first;
+        Node<T> curr = this.first.getNext();
+
+        while (curr != null) {
+            if (curr.getElem().equals(x)) {
+                prev.setNext(curr.getNext());
+                curr = curr.getNext();
+            } else {
+                prev = curr;
+                curr = curr.getNext();
+            }
+        }
+
+        if(this.first.getElem().equals(x))
+            this.first = this.first.getNext();
     }
 }
 
