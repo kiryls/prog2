@@ -82,9 +82,15 @@ class Node<T>{
 public class Main1 {
 
     private static int totalNumberOfElementsInLists(Node<Node<Integer>> ll) {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        if(ll == null) 
+            return 0;
+
+        int acc = 0;
+
+        for(Node<Integer> n = ll.getElem(); n != null; n = n.getNext()) 
+            acc++;
+
+        return acc + totalNumberOfElementsInLists(ll.getNext());
     }
 
     //------ INIZIO CODICE PER IL TESTING -------------------------------------
