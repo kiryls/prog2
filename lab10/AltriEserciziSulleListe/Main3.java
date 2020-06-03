@@ -1,3 +1,4 @@
+
 /*
  * Implementare un metodo removeEmptyLists che accetta in input
  * una lista di liste di numeri interi e rimuove da essa tutte le eventuali 
@@ -88,9 +89,28 @@ class Node<T>{
 public class Main3 {
 
     private static Node<Node<Integer>> removeEmptyLists(Node<Node<Integer>> ll) {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        
+        if (ll == null) 
+            return ll;
+
+        Node<Node<Integer>> prev = ll;
+        Node<Node<Integer>> curr = ll.getNext();
+
+        while(curr != null) {
+            if(curr.getElem() == null) {
+                prev.setNext(curr.getNext());
+                curr = curr.getNext();
+            } else {
+                prev = curr;
+                curr = curr.getNext();
+            }
+        }
+
+        if(ll.getElem() == null)
+            ll = ll.getNext();
+
+
+        return ll;
     }
 
     //------ INIZIO CODICE PER IL TESTING ---------------------------------
