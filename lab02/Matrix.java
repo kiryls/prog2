@@ -41,6 +41,7 @@ public class Matrix {
     }
 
     public Matrix mul (Matrix A) {
-        assert this.n == A.rows(): //TODO da finire.
+        assert this.n == A.rows(); //TODO da finire.
+        return null;
     }
 }
