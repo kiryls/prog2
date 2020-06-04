@@ -1,3 +1,5 @@
+package lab09;
+
 import java.awt.*;
 
 public class RettangoloColorato extends Rettangolo {

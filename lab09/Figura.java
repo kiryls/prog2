@@ -1,3 +1,5 @@
+package lab09;
+
 // Figura.java
 import java.awt.*;
 import javax.swing.*;

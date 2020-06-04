@@ -1,3 +1,5 @@
+package lab09;
+
 import java.awt.*; // Abstract Window Toolkit
 import javax.swing.*; // estensione di AWT per interfacce grafiche
 

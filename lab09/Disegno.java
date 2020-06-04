@@ -1,3 +1,4 @@
+package lab09;
 
 // Disegno.java
 import java.awt.*;

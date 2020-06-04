@@ -1,3 +1,5 @@
+package lab09;
+
 // Rettangolo.java
 import java.awt.*;
 import javax.swing.*;
