@@ -1,3 +1,5 @@
+package lab04;
+
 
 public class ImmutableTriangle {
     private ImmutablePoint a;

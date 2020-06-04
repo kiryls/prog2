@@ -1,3 +1,5 @@
+package lab04;
+
 public class MutableTriangle {
     private MutablePoint a;
     private MutablePoint b;
