@@ -90,9 +90,36 @@ class Node<T>{
 public class Main2 {
 
     private static Node<Node<Integer>> addListOfMaxs(Node<Node<Integer>> ll) {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        if(ll == null) 
+            return ll;
+            
+        Node<Integer> maxs = null;
+
+        for(Node<Node<Integer>> n = ll; n != null; n = n.getNext()) {
+
+            Integer max = null;
+            Node<Integer> p = n.getElem();
+            if(p != null) {
+                max = p.getElem();
+                p = p.getNext();
+            }
+                
+
+            for(; p != null; p = p.getNext()) {
+
+                if(p.getElem() > max) 
+                    max = p.getElem();
+
+            }
+
+            if(max != null) 
+                maxs = new Node<Integer>(max, maxs);
+
+        }
+           
+        return new Node<Node<Integer>>(maxs, ll);
+
+
     }
 
     //------ INIZIO CODICE PER IL TESTING -------------------------------------
