@@ -82,9 +82,32 @@ class Node<T>{
 
 public class Main5 {
     private static void removeLessThan(Node<Node<Integer>> ll, int x) {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        if (ll == null)
+            return;
+
+        if (ll.getElem() == null) {
+            removeLessThan(ll.getNext(), x);
+            return;
+        }
+
+        Node<Integer> prev = ll.getElem();
+        Node<Integer> curr = prev.getNext();
+
+        while (curr != null) {
+            if (curr.getElem().compareTo(x) < 0) {
+                prev.setNext(curr.getNext());
+                curr = curr.getNext();
+            } else {
+                prev = curr;
+                curr = curr.getNext();
+            }
+        }
+
+        if (ll.getElem().getElem().compareTo(x) < 0)
+            ll.setElem(ll.getElem().getNext());
+
+        removeLessThan(ll.getNext(), x);  
+
     }
 
     //------ INIZIO CODICE PER IL TESTING ---------------------------------
