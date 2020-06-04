@@ -1,3 +1,5 @@
+package lab03;
+
 // Frazione.java
 
 public class Frazione {

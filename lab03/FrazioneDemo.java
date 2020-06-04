@@ -1,3 +1,5 @@
+package lab03;
+
 // FrazioneDemo.java (esperimenti su frazioni)
 public class FrazioneDemo {
     public static void main(String[] args) {

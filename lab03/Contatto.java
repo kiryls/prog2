@@ -1,3 +1,5 @@
+package lab03;
+
 // Contatto.java
 
 // contiene: costruttore a 2 argomenti, metodi get(), set() e output()

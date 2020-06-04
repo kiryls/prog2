@@ -1,4 +1,5 @@
 // RubricaDemo.java
+package lab03;
 
 public class RubricaDemo {
     public static void main(String[] args) {

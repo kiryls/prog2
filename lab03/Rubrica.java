@@ -1,3 +1,5 @@
+package lab03;
+
 // Rubrica.java
 
 public class Rubrica {

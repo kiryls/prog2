@@ -1,3 +1,5 @@
+package lab03;
+
 public class Bottiglia {
     private int cap;
     private int lvl;

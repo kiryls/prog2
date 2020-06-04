@@ -1,3 +1,5 @@
+package lab03;
+
 public class DieHard {
     public static void riempi(Bottiglia b) {
         b.setLivello(b.getCap());
