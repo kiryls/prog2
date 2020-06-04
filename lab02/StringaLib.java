@@ -1,3 +1,5 @@
+package lab02;
+
 public class StringaLib {
     public static String longest(String[] stringArr) {
         assert stringArr != null && stringArr.length != 0: "Errore array stringa";

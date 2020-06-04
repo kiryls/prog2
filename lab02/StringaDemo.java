@@ -1,3 +1,5 @@
+package lab02;
+
 class StringaDemo {
     public static void main(String[] args) {
         String[] stringArr = new String[3];

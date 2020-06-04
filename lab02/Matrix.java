@@ -1,3 +1,5 @@
+package lab02;
+
 public class Matrix {
     private int m;
     private int n;
