@@ -1,3 +1,5 @@
+package lab07;
+
 public class NodeUtilDemo {
     public static void main(String[] args) {
         Node<Integer> a;
