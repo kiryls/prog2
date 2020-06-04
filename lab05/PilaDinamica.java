@@ -1,3 +1,5 @@
+package lab05;
+
 // Pila di dimensione variable di interi, 
 // realizzata come lista concatenata di Nodi
 public class PilaDinamica {

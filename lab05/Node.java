@@ -1,3 +1,5 @@
+package lab05;
+
 // Nodo per realizzare liste concatenate.
 public class Node {
     // Elemento intero contenuto in questo nodo.

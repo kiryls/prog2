@@ -1,3 +1,5 @@
+package lab05;
+
 
 public class PilaDinamicaDemo {
     public static void main(String[] args) {
