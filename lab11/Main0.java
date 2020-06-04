@@ -59,17 +59,31 @@ class List {
 
     public String toString()
     {
-	String s = "";
-	for (Node p = first; p != null; p = p.getNext()) {
-	    if (p != first) s += ", ";
-	    s += p.getElem();
-	}
-	return s;
+        String s = "";
+        for (Node p = first; p != null; p = p.getNext()) {
+            if (p != first) s += ", ";
+            s += p.getElem();
+        }
+        return s;
     }
 
-    public void modifica()
-    {
-	/* DA COMPLETARE */
+    public void modifica() {
+        if(this.first == null) {
+            this.first = new Node(0, this.first);
+            return;
+        }
+
+        int acc = 0;
+        Node prec = null;
+        Node n = null;
+
+        for(n = this.first; n != null; prec = n, n = n.getNext()) {
+            if(n.getElem() > 0)
+                acc += n.getElem();
+        }
+
+        prec.setNext(new Node(acc, n));
+
     }
 }
 
