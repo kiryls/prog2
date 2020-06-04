@@ -83,7 +83,6 @@ class Node<T>{
 public class Main4 {
 
     private static void addOdd(Node<Node<Integer>> ll) {
-
         if(ll == null) 
             return;
 
@@ -92,9 +91,8 @@ public class Main4 {
                 Node<Integer> tmp = new Node<Integer>(n.getElem()+1, n.getNext());
                 n.setNext(tmp);
             }
-
         }   
-        
+
         addOdd(ll.getNext());
     }
 
