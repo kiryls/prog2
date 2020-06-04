@@ -83,9 +83,19 @@ class Node<T>{
 public class Main4 {
 
     private static void addOdd(Node<Node<Integer>> ll) {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+
+        if(ll == null) 
+            return;
+
+        for(Node<Integer> n = ll.getElem(); n != null; n = n.getNext()){
+            if(n.getElem() % 2 == 0) {
+                Node<Integer> tmp = new Node<Integer>(n.getElem()+1, n.getNext());
+                n.setNext(tmp);
+            }
+
+        }   
+        
+        addOdd(ll.getNext());
     }
 
     //------ INIZIO CODICE PER IL TESTING ---------------------------------
