@@ -1,3 +1,5 @@
+package lab10.InterfacciaComparable;
+
 //Contatto.java
 public class Contatto implements Comparable<Contatto> {
     // un contatto e' la coppia di una persona e il suo indirizzo email

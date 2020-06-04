@@ -1,3 +1,5 @@
+package lab10.EserciziListe;
+
 import java.util.Iterator;
 
 public class ListIterator implements Iterator<Integer> {

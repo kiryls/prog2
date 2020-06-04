@@ -1,3 +1,5 @@
+package lab10.EserciziListe;
+
 public class NilConsDemo {
     public static void main(String[] args) {
         List l = new Nil();

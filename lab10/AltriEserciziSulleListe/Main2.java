@@ -1,3 +1,5 @@
+package lab10.AltriEserciziSulleListe;
+
 /*
  * Implementare un metodo addListOfMaxs che accetta in input
  * una lista di liste di numeri interi, e vi aggiunge in testa la lista invertita dei massimi delle liste 

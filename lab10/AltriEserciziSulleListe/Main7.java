@@ -1,3 +1,5 @@
+package lab10.AltriEserciziSulleListe;
+
 /*
  * Implementare un metodo truncate che accetta in input una lista
  * di liste di numeri interi ll ed un numero non negativo x, e

@@ -1,3 +1,5 @@
+package lab10.InterfacciaComparable;
+
 public class ContattoDemo {
     // verifica i metodi della classe Contatto
     public static void main(String[] args) {

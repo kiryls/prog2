@@ -1,3 +1,5 @@
+package lab10.InterfacciaComparable;
+
 import java.util.Arrays;
 
 public class Rubrica {

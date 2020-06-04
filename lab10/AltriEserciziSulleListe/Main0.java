@@ -1,3 +1,5 @@
+package lab10.AltriEserciziSulleListe;
+
 /*
  * Implementare un metodo delete(x) che, in una lista di oggetti di tipo T, 
  * cancella tutti gli elementi y tali che y.equals(x). 

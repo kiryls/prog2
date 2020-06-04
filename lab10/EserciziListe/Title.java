@@ -1,3 +1,5 @@
+package lab10.EserciziListe;
+
 public class Title {
     public static void show(String s) {
         String upDownDelimiter = "+------------------------------------------------+";

@@ -1,3 +1,5 @@
+package lab10.AltriEserciziSulleListe;
+
 /* 
  * Implementare un metodo moveMaxToEnd() che, in una lista di oggetti di tipo T, 
  * (dove T implementa Comparable) muove in ultima posizione l'elemento massimo

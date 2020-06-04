@@ -1,3 +1,4 @@
+package lab10.EserciziListe;
 
 public class Cons extends List {
     private int elem;

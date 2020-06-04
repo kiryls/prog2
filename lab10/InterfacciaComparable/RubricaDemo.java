@@ -1,3 +1,5 @@
+package lab10.InterfacciaComparable;
+
 public class RubricaDemo {
     public static void main(String[] args) {
         Rubrica R = new Rubrica(100);

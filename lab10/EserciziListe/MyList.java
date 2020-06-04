@@ -1,3 +1,5 @@
+package lab10.EserciziListe;
+
 // MyList.java
 public class MyList {
     private Node first; // Riferimento al primo nodo della lista

@@ -1,3 +1,5 @@
+package lab10.EserciziListe;
+
 
 public class Nil extends List {
     public List insert(int n, int x) throws IllegalArgumentException {

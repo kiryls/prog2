@@ -1,3 +1,5 @@
+package lab10.AltriEserciziSulleListe;
+
 /* 
  * Implementare un metodo removeLessThan che accetta in input
  * una lista di liste di numeri interi, e, in ogni lista interna, elimina

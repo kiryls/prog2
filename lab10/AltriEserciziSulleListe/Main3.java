@@ -1,3 +1,4 @@
+package lab10.AltriEserciziSulleListe;
 
 /*
  * Implementare un metodo removeEmptyLists che accetta in input

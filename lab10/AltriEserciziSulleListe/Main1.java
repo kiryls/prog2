@@ -1,3 +1,5 @@
+package lab10.AltriEserciziSulleListe;
+
 /*
  * Implementare un metodo totalNumberOfElementsInLists che accetta in input
  * una lista di liste di numeri interi, e restituisce il numero totale di 

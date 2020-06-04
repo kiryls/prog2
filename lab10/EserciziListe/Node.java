@@ -1,3 +1,5 @@
+package lab10.EserciziListe;
+
 // Node.java
 public class Node {
     private int elem;
