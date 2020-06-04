@@ -1,3 +1,5 @@
+package lab01;
+
 // Salviamo il tutto nel file CalcolatriceDemo.java
 class Calcolatrice { //classe non eseguibile e non pubblica
     // una calcolatrice e' una pila che contiene fino a 100 interi.
