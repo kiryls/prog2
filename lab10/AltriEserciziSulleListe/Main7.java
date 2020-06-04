@@ -56,9 +56,26 @@ class Node<T>{
 
 public class Main7 {
     public static <T> void truncate(Node<Node<T>> ll, int x){
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        if (ll == null)
+            return;
+
+        Node<T> prev = null;
+        Node<T> curr = ll.elem;
+        int i = 0;
+
+        while (i < x && curr != null) {
+            i++;
+            prev = curr;
+            curr = curr.next;
+        }
+
+        if (i == 0)
+            ll.elem = null;
+        else
+            prev.next = null;
+
+        truncate(ll.next, x);
+            
     }
 
     public static void main(String[] args) {
