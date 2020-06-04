@@ -15,7 +15,7 @@
  * lista  : 2, 1
  * atteso : 1, 2
  *
- * lista  : 2, 3, 1, 3, 2
+ * lista  : 2, 3, 1, 3, 2   
  * atteso : 2, 1, 3, 2, 3
   *
  * Non e` consentito usare break o continue all'interno di
@@ -56,9 +56,20 @@ class List<T extends Comparable<T>> {
     }
 
     public void moveMaxToEnd() {
-        /////////////////////////
-        //    DA COMPLETARE    //
-        /////////////////////////
+        if(this.first == null)
+            return;
+
+        Node<T> n = this.first;
+        T tmp = null;
+
+        while(n.next != null) {
+            if(n.elem.compareTo(n.next.elem) > 0) {
+                tmp = n.next.elem;
+                n.next.elem = n.elem;
+                n.elem = tmp;
+            }
+            n = n.next;
+        }
     }
 }
 
