@@ -1,3 +1,5 @@
+package lab06;
+
 class SetDemoEma {
     public static void main(String[] args) {
         Set<Integer> s = new Set<>();

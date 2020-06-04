@@ -1,3 +1,5 @@
+package lab06;
+
 
 public class Set<T> {
     private Node<T> first;

@@ -1,3 +1,5 @@
+package lab06;
+
 // coda di dimensione dinamica, implementata come lista di Nodi
 public class DynamicQueue<T> {
     // riferimento al primo nodo della lista, o null

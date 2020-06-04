@@ -1,3 +1,5 @@
+package lab06;
+
 
 public class Person {
     private String firstName;
