@@ -68,7 +68,26 @@ class List {
 
     public void elimina()
     {
-	/* DA COMPLETARE */
+        if(this.first == null) 
+            return;
+
+        if(this.first.getNext() == null)
+            return;
+
+        Node p = this.first;
+        Node n = p.getNext();
+
+        while (n != null) {
+            if(p.getElem() > n.getElem()){
+                p.setNext(n.getNext());
+                n = n.getNext();
+            } else {
+                p = n;
+                n = n.getNext();
+            }
+        }
+
+        
     }
 }
 
