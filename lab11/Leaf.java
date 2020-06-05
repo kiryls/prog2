@@ -39,4 +39,33 @@ public class Leaf extends Tree {
     public int depth() {
 	return 0;
     }
+
+    // #############################################################
+    // ######################## Nuovi Metodi #######################
+    // #############################################################
+
+    public int size() {
+        return 0;
+    }
+
+    public int sum(){
+        return 0;
+    }
+
+    public boolean contains(int x, int n){
+        return false;
+    }
+
+    public boolean balanced(){
+        return true;
+    }
+
+    public Tree filter_le(int x){
+        return new Leaf();
+    }
+
+    public int get(int i){
+        throw new Error("oof");
+    }
+
 }
