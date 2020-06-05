@@ -71,7 +71,32 @@ class List {
 
     public void inversioni()
     {
-	/* DA COMPLETARE */
+        if(this.first == null) {
+            this.first = new Node(0, this.first);
+            return;
+        }
+            
+
+        if(this.first.getNext() == null) {
+            this.first.setNext(new Node(0, null));
+            return;
+        }
+
+        int i = 0;
+
+        Node p = this.first;
+        Node n = p.getNext();
+
+        while (n != null) {
+            if(p.getElem() > n.getElem()) {
+                i++;
+            }
+            p = n;
+            n = n.getNext();
+        }
+
+        p.setNext(new Node(i, null));
+
     }
 }
 
