@@ -69,7 +69,24 @@ class List {
 
     public void modifica()
     {
-	/* DA COMPLETARE */
+        if(this.first == null) 
+            return;
+
+        Node p = this.first;
+        Node n = p.getNext();
+        while(n != null) {
+            if(n.getElem() < 0) {
+                p.setNext(n.getNext());
+                n = n.getNext();
+            } else {
+                p = n;
+                n = n.getNext();
+            } 
+        }
+
+        if(this.first.getElem() < 0)
+            this.first = this.first.getNext();
+        
     }
 }
 
