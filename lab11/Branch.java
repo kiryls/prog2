@@ -139,8 +139,15 @@ public class Branch extends Tree {
 		if(i < 0)
 			throw new Error("indice negativo");
 
-		left.get(i);
+		int size = left.size();
 
-		
+		if(i < size)
+			return left.get(i);
+
+		if(i == size)
+			return elem;
+
+		return right.get(i);
+
 	}
 }
