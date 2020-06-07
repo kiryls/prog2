@@ -91,5 +91,56 @@ public class Branch extends Tree {
 
     public String toString() {
 	return "Branch(" + elem + "," + left + "," + right + ")";
-    }
+	}
+	
+	// #############################################################
+	// ######################## Nuovi Metodi #######################
+	// #############################################################
+
+	public int size() {
+		return 1 + left.size() + right.size();
+	}
+
+	public int sum() {
+		return this.elem + left.sum() + right.sum();
+	}
+
+	public boolean contains(int x, int n) {
+		if(x == elem && n >= 0)
+			return true;
+
+		else if(x < elem && n >= 0)
+			return true && left.contains(x, n-1);
+
+		else if(x > elem && n >= 0)
+			return true && right.contains(x, n-1);
+
+		else
+			return false;
+	}
+
+	public boolean balanced() {
+		return Math.abs(left.depth()-right.depth()) <= 1 ? true : false;
+	}
+
+	public Tree filter_le(int x) {
+
+		if (elem == x) 
+			return new Branch(elem, new Leaf(), right.filter_le(x));
+
+		if (elem > x)
+			return new Branch(elem, left.filter_le(x), right.filter_le(x));
+	
+		return right.filter_le(x);
+		
+	}
+
+	public int get(int i){
+		if(i < 0)
+			throw new Error("indice negativo");
+
+		left.get(i);
+
+		
+	}
 }
